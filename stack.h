@@ -17,6 +17,7 @@ class Stack
 		void push(void* inData);	// Add element to top of stack
 		void* pop();				// Return element at top of stack and remove from top
 		void* top();				// Return element at top of stack
+		bool empty();
 		void display();
 
 };

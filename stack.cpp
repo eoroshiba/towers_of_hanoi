@@ -30,6 +30,11 @@ void* Stack::top()
 	// your code
 }
 
+bool Stack::empty()
+{
+	// your code
+}
+
 void Stack::display()
 {
 	//cout<<endl;
