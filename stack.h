@@ -1,22 +1,22 @@
 #ifndef _Stack_H_
 #define _Stack_H_
-
+#include "disc.h"
 class Stack
 {
 	struct Node
 	{
-		void* data;
-		Node *pNext;
+		Disc* data;
+		Node* pNext;
 	};
 
 	Node* pTop;
 
-
 	public:
 		Stack();					// Construct stack
-		void push(void* inData);	// Add element to top of stack
-		void* pop();				// Return element at top of stack and remove from top
-		void* top();				// Return element at top of stack
+		~Stack();
+		void push(Disc* inData);	// Add element to top of stack
+		Disc* pop();				// Return element at top of stack and remove from top
+		Disc* top();				// Return element at top of stack
 		bool empty();
 		void display();
 

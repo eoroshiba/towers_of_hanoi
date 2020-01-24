@@ -1,5 +1,5 @@
 #include "disc.h"
-
+#include <sstream>
 Disc::Disc()
 {
 }
@@ -26,7 +26,8 @@ bool Disc::setSize(int s)
 
 std::string Disc::toString()
 {
-	return std::to_string(size);
-	//return 
+	std::stringstream stream;
+  stream << size;
+  return stream.str();
 }
 
